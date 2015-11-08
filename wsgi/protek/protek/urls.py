@@ -21,9 +21,4 @@ from protekApp.views import *
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', main_page),
-=======
-
-urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
->>>>>>> 5ccca08b7da3b8ff6111ccbc3bb318641549cb26
 ]
