@@ -1,9 +1,21 @@
 from django.http import HttpResponse
-from django.template.loader import get_template
+from django.template.loader import 
 
-def main_page(request):
 template = get_template('index.html')
 html = template.render({'user': 'DOC'}, request)
-	return HttpResponse(html)
-	
-	
+
+def main_page(request):
+	output = '''
+	    <html>
+	        <head><title>%s</title></head>
+		<body>
+			<h1>%s</h1><p>%s</p>
+		</body>
+	    </html>
+	''' % (
+	  'Test Page',
+	  'Created By Davall Clarke',
+	  html
+	)
+	return HttpResponse(output)
+
