@@ -18,6 +18,10 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from protekApp.views import *
 
+#from . import views
+
 urlpatterns = [
     url(r'^$', main_page),
+	url(r'^user/(\w+)/$', user_page),
+  (r'^login/$', 'django.contrib.auth.views.login'),
 ]
