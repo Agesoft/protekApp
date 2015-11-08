@@ -2,5 +2,7 @@ protek website
 
 Authors	: Ackeme and Davall
 
-date	: November 2015
+Date	  : November 2015
+
+HTML Path : wsgi/protek/protekApp/templates
 
