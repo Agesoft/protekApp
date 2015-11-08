@@ -87,9 +87,15 @@ WSGI_APPLICATION = 'protek.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         'ENGINE': 'django.db.backends.sqlite3',
         # GETTING-STARTED: change 'db.sqlite3' to your sqlite3 database:
         'NAME': os.path.join(DATA_DIR, 'protek.sqlite3'),
+=======
+        'ENGINE': 'postgresql',
+        # GETTING-STARTED: change 'db.sqlite3' to your sqlite3 database:
+        'NAME': os.path.join(DATA_DIR, 'protek'),
+>>>>>>> 5ccca08b7da3b8ff6111ccbc3bb318641549cb26
     }
 }
 
