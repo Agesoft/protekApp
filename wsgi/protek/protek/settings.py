@@ -15,7 +15,7 @@ BASE_DIR = os.path.dirname(DJ_PROJECT_DIR)
 WSGI_DIR = os.path.dirname(BASE_DIR)
 REPO_DIR = os.path.dirname(WSGI_DIR)
 DATA_DIR = os.environ.get('OPENSHIFT_DATA_DIR', BASE_DIR)
-TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
+#TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
 
 import sys
 sys.path.append(os.path.join(REPO_DIR, 'libs'))
@@ -67,7 +67,7 @@ ROOT_URLCONF = 'protek.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
