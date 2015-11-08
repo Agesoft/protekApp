@@ -91,9 +91,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         # GETTING-STARTED: change 'db.sqlite3' to your sqlite3 database:
         'NAME': os.path.join(DATA_DIR, 'protek.sqlite3'),
-        'ENGINE': 'postgresql',
-        # GETTING-STARTED: change 'db.sqlite3' to your sqlite3 database:
-        'NAME': os.path.join(DATA_DIR, 'protek'),
     }
 }
 
