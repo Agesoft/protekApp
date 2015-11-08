@@ -15,6 +15,7 @@ BASE_DIR = os.path.dirname(DJ_PROJECT_DIR)
 WSGI_DIR = os.path.dirname(BASE_DIR)
 REPO_DIR = os.path.dirname(WSGI_DIR)
 DATA_DIR = os.environ.get('OPENSHIFT_DATA_DIR', BASE_DIR)
+TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), 'templates', )
 
 import sys
 sys.path.append(os.path.join(REPO_DIR, 'libs'))
@@ -48,6 +49,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'protek.protekAPP',
 )
 
 MIDDLEWARE_CLASSES = (
