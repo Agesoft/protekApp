@@ -10,6 +10,6 @@ def main_page(request):
 	''' % (
 	  'Test Page',
 	  'Created By Davall Clarke',
-	  'This is a simple Hello world http test!'
+	  os.path.join(os.path.dirname(__file__), 'templates')
 	)
 	return HttpResponse(output)
