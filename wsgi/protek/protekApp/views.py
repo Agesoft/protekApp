@@ -1,9 +1,14 @@
-import os
-import sys
+from django.http import HttpResponse
+from django.template.loader import get_template
 
-pth = os.path.join(os.path.dirname(__file__), 'templates/index.html')
+template = get_template('index.html')
+html = template.render({'user': 'DOC'}, request)
 
-from django.http import render_to_response
-def main_page(request): return render_to_response(
-	pth,{'user':'DOC'}
-	)
+
+
+pth = os.path.join(os.path.dirname(__file__), 'templates')
+
+def main_page(request):
+	return HttpResponse(html)
+	
+	
