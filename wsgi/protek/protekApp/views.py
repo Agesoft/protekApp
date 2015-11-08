@@ -6,7 +6,7 @@ def main_page(request): return render_to_response(
 	
 from django.shortcuts import render_to_response
 def main_page(request):   return render_to_response(
-    '../templates/index.html', 
+    '../protek/templates/index.html', 
     { 'user': request.user } 
   )
 
