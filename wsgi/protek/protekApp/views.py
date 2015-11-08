@@ -1,4 +1,10 @@
+import os
+import sys
+
 from django.http import HttpResponse
+
+pth = os.path.join(os.path.dirname(__file__), 'templates')
+
 def main_page(request):
 	output = '''
 	    <html>
@@ -10,6 +16,6 @@ def main_page(request):
 	''' % (
 	  'Test Page',
 	  'Created By Davall Clarke',
-	  os.path.join(os.path.dirname(__file__), 'templates')
+	  pth
 	)
 	return HttpResponse(output)
