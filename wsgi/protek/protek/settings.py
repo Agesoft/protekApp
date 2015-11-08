@@ -68,7 +68,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-				'/var/lib/openshift/563e4a0c2d527145c2000038/app-root/repo/wsgi/protek/protekApp/templates',
+				os.path.join(BASE_DIR, 'templates'),
 			],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -77,15 +77,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-				'django.template.context_processors.i18n',
-                'django.template.context_processors.media',
-                'django.template.context_processors.static',
-                'django.template.context_processors.tz',
             ],
-			'loaders': [
-				'django.template.loaders.filesystem.Loader',
-				'django.template.loaders.app_directories.Loader',
-			]
+			#'loaders': [
+			#	'django.template.loaders.filesystem.Loader',
+			#	'django.template.loaders.app_directories.Loader',
+			#]
         },
     },
 ]
