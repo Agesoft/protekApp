@@ -1,3 +1,5 @@
+ssh 563e4a0c2d527145c2000038@protek-dent.rhcloud.com
+
 	
 	'''from django.http import render_to_response
 def main_page(request): return render_to_response(

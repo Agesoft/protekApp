@@ -23,11 +23,13 @@ def conact(request):
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from protekApp.views import *
+from protekApp.views import *  
 
 #from . import views
 
 urlpatterns = [
     url(r'^$', home, name="home"),	
+	url(r'^account/(\w+)/$', account, name="account")
+	url(r'^login/$', 'django.contrib.auth.views.login'),
 	url(r'^contact/', contact, name="contact"),
 ]
