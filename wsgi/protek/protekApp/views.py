@@ -1,4 +1,9 @@
+	import os
+import sys
+
 from django.http import HttpResponse
+
+pth = os.path.join(os.path.dirname(__file__), 'templates')
 
 def main_page(request):
 	output = '''
@@ -11,6 +16,6 @@ def main_page(request):
 	''' % (
 	  'Test Page',
 	  'Created By Davall Clarke',
-	  'Fuck Django'
+	  pth
 	)
 	return HttpResponse(output)
