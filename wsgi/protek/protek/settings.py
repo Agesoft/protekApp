@@ -116,3 +116,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(WSGI_DIR, 'static')
+
+# define global static
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'templates/core/static'),
+)
+
+\core
