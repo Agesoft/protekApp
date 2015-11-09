@@ -164,6 +164,10 @@ def main_page(request):
 		
 		
 		
+{% block heading %}Home{% endblock %}
+
+{% block content %}
+{% endblock content %}
 		
 		
 		
