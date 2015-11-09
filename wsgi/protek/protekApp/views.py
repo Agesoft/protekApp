@@ -1,8 +1,10 @@
+try:
+import sys
 from django.http import HttpResponse
 from django.http import Http404
 from django.template.loader import get_template
 
-try:
+
 template = get_template('index.html')	
 pth = template.render({'user': 'DOC'})
 
@@ -21,4 +23,4 @@ def main_page(request):
 	)
 	return HttpResponse(output)
 	except:
-		raise Http404("Failed My Youth!!!")
+		raise Http404("Failed My Youth!!!%s : ",sys.exc_info()[0])

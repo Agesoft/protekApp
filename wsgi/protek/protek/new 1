@@ -117,7 +117,13 @@ def main_page(request):
 /var/lib/openshift/563e4a0c2d527145c2000038/app-root/repo/wsgi/protek/protekApp/templates		
 			
 			
-			
+from django.http import HttpResponse
+from django.template.loader import get_template
+
+def main_page(request):
+    template = get_template('index.html')
+	outp = template.render({'user': 'DOC'})
+    return HttpResponse(outp)			
 			
 			
 			
