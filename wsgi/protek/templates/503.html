@@ -5,3 +5,14 @@ git add -A .;git commit -m "W7 Debugging"; git push origin master
 
 find . -name '*.*' -exec sh -c 'a=$(echo "$0" | sed -r "s/([^.]*)\$/\L\1/");[ "$a" != "$0" ] && m
 "$0" "$a" ' {} \;
+
+	
+	
+	{% extends "base.html" %}
+
+{% block heading %}Login{% endblock %}
+
+{% block content %}
+	
+	
+		{% endblock content %}
