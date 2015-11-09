@@ -1,3 +1,4 @@
+import os
 from django.http import HttpResponse
 
 pth = os.path.join(os.path.dirname(__file__), 'templates')
