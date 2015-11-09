@@ -7,7 +7,7 @@ from django.http import Http404
 from django.template.loader import get_template
 
 
-template = get_template('index.html')	
+template = get_template('main.html')	
 pth = template.render({'user': 'DOC'})
 
 def main_page(request):
