@@ -14,17 +14,18 @@
 				<form method="post" action="{% url 'django.contrib.auth.views.login' %}">
 				{% csrf_token %}				
 				<div> 	
-					<span style="width:70px;" class="mail" for="id_username">Email</span>
+					<span style="width:65px; display: inline-block;" class="mail" for="id_username">Email</span>
 					<span>{{ form.username }}</span>
 				</div>
 				<div> 
-					<span style="width:70px;" class="word" for="id_password">Password</span>
+					<span style="width:65px; display: inline-block;" class="word" for="id_password">Password</span>
 					<span>{{ form.password }}</span>
 				</div>				
 					<input type="submit" value="Login">
 					<input type="hidden" name="next" value="{{ next }}" /> 
 					
 				</form>
+				<p>Or Create An Account</p>
 		</div>
 	</div>
 		{% endblock content %}
