@@ -68,7 +68,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-				'/var/lib/openshift/563e4a0c2d527145c2000038/app-root/repo/wsgi/protek/protekApp/templates',
+				os.path.join(os.path.dirname(__file__), 'templates'),
 			],
         'APP_DIRS': True,
         'OPTIONS': {

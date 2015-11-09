@@ -1,7 +1,10 @@
-import os
 from django.http import HttpResponse
+from django.http import Http404
+from django.template.loader import get_template
 
-pth = os.path.join(os.path.dirname(__file__), 'templates')
+try:
+template = get_template('index.html')	
+pth = template.render({'user': 'DOC'})
 
 def main_page(request):
 	output = '''
@@ -17,3 +20,5 @@ def main_page(request):
 	  pth
 	)
 	return HttpResponse(output)
+	except:
+		raise Http404("Failed My Youth!!!")
