@@ -29,7 +29,7 @@ from protekApp.views import *
 
 urlpatterns = [
     url(r'^$', home, name="home"),	
-	url(r'^account/(\w+)/$', account, name="account")
+	url(r'^account/(\w+)/$', account_m, name="account")
 	url(r'^login/$', 'django.contrib.auth.views.login'),
 	url(r'^contact/', contact, name="contact"),
 ]
