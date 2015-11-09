@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>proteK</title>
+<title>{% block title %}{% endblock %}</title>
 <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="{% static "js/jquery.min.js" %}"></script>
@@ -57,6 +57,8 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 	});	  
 });
 </script>
+        {% block extra_head %}
+        {% endblock %}
 </head>
 <body>
   <!--header-->
@@ -70,7 +72,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 				<div class="header-in">
 					<ul class="icon1 sub-icon1">
 							<li  ><a href="wishlist.html">WISH LIST (0)</a> </li>
-							<li  ><a href="account.html">{% if user.username %} {{ user.username }}'s {% else %}MAKE {% endif %}ACCOUNT</a></li>
+							<li  ><a href="account.html">MY ACCOUNT</a></li>
 							<li ><a href="#" > SHOPPING CART</a></li>
 							<li > <a href="checkout.html" >CHECKOUT</a> </li>	
 							<li><div class="cart">
@@ -209,6 +211,10 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 		</div>
 	</div>
 		<!---->
+
+            {% block content %}
+            {% endblock %}
+		
 		<div class="container">
 			<div class="content">
 				<div class="content-top">
@@ -230,7 +236,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 						</div>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="{% static "single.html"><img  src="{% static "images/pi1.jpg" alt="" />	</a>
+								<a href="single.html"><img  src="{% static "images/pi1.jpg" alt="" />	</a>
 								<div class="top-content">
 									<h5><a href="single.html">Bite Me</a></h5>
 									<div class="white">
@@ -243,7 +249,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 						</div>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="{% static "single.html"><img  src="{% static "images/pi2.jpg" alt="" /></a>	
+								<a href="single.html"><img  src="{% static "images/pi2.jpg" alt="" /></a>	
 								<div class="top-content">
 									<h5><a href="single.html">Little Fella</a></h5>
 									<div class="white">
@@ -484,6 +490,9 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 		</div>
+		
+		  {% block extra_script %}
+        {% endblock %}
 </body>
 </html>
 {% endraw %}
