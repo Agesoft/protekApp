@@ -1,0 +1,129 @@
+	
+	'''from django.http import render_to_response
+def main_page(request): return render_to_response(
+	'index.html',{'user':'DOC'}
+	)
+	
+	
+from django.shortcuts import render_to_response
+def main_page(request):   return render_to_response(
+    '../protek/templates/index.html', 
+    { 'user': 'DOC' } 
+  )
+
+
+'''
+
+from django.http import HttpResponse
+def main_page(request):
+	output = '''
+	    <html>
+	        <head><title>%s</title></head>
+		<body>
+			<h1>%s</h1><p>%s</p>
+		</body>
+	    </html>
+	''' % (
+	  'Test Page',
+	  'Created By Davall Clarke',
+	  'This is a simple Hello world http test!'
+	)
+	return HttpResponse(output)
+	
+	
+	import os
+import sys
+
+from django.http import HttpResponse
+
+pth = os.path.join(os.path.dirname(__file__), 'templates')
+
+def main_page(request):
+	output = '''
+	    <html>
+	        <head><title>%s</title></head>
+		<body>
+			<h1>%s</h1><p>%s</p>
+		</body>
+	    </html>
+	''' % (
+	  'Test Page',
+	  'Created By Davall Clarke',
+	  pth
+	)
+	return HttpResponse(output)
+
+	
+	
+	
+	from django.http import HttpResponse
+from django.template.loader import get_template
+
+def main_page(request):
+    template = get_template('index.html')
+	html = template.render({'user': 'DOC'})
+    return HttpResponse(html)
+	
+	
+	
+	
+	
+	
+				'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
+                'django.template.context_processors.static',
+                'django.template.context_processors.tz',
+				
+				
+				
+				from django.http import HttpResponse 
+from django.template import Context 
+from django.template.loader import get_template 
+
+def main_page(request):   
+template = get_template('index.html')   
+variables = Context({
+    'user': 'DOC'
+  })
+output = template.render(variables)   
+return HttpResponse(output)
+
+
+
+
+			#'loaders': [
+			#	'django.template.loaders.filesystem.Loader',
+			#	'django.template.loaders.app_directories.Loader',
+			#]
+			
+			
+from django.http import HttpResponse
+
+def main_page(request):
+	output = '''
+	    <html>
+	        <head><title>%s</title></head>
+		<body>
+			<h1>%s</h1><p>%s</p>
+		</body>
+	    </html>
+	''' % (
+	  'Test Page',
+	  'Created By Davall Clarke',
+	  'Piseddddddd'
+	)
+	return HttpResponse(output)
+	
+/var/lib/openshift/563e4a0c2d527145c2000038/app-root/repo/wsgi/protek/protekApp/templates		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
