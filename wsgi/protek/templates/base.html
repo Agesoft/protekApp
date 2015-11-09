@@ -3,12 +3,12 @@
 <html>
 <head>
 <title>{% block title %}{% endblock %}</title>
-<link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" media="all" />
+<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="{% static "js/jquery.min.js" %}"></script>
-<!-- My theme Style -->
+<script src="/static/js/jquery.min.js"></script>
+<!-- Custom Theme files -->
 <!--theme-style-->
-<link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" media="all" />	
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,9 +17,17 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--fonts-->
 <link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<style type="text/css">
+.bold {
+	font-weight: bold;
+}
+.Bold {
+	font-weight: bold;
+}
+</style>
 <!--//fonts-->
-<script type="text/javascript" src="{% static "js/move-top.js" %}"></script>
-<script type="text/javascript" src="{% static "js/easing.js" %}"></script>
+<script type="text/javascript" src="/static/js/move-top.js"></script>
+<script type="text/javascript" src="/static/js/easing.js"></script>
 				<script type="text/javascript">
 					jQuery(document).ready(function($) {
 						$(".scroll").click(function(event){		
@@ -28,19 +36,6 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 						});
 					});
 				</script>
-<!--slider-script-->
-		<script src="{% static "js/responsiveslides.min.js" %}"></script>
-			<script>
-				$(function () {
-				  $("#slider1").responsiveSlides({
-					auto: true,
-					speed: 500,
-					namespace: "callbacks",
-					pager: true,
-				  });
-				});
-			</script>
-<!--//slider-script-->
 <script>$(document).ready(function(c) {
 	$('.alert-close').on('click', function(c){
 		$('.message').fadeOut('slow', function(c){
@@ -56,9 +51,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 		});
 	});	  
 });
-</script>
-        {% block extra_head %}
-        {% endblock %}
+</script>				
 </head>
 <body>
   <!--header-->
@@ -66,13 +59,17 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 		<div class="header-top">
 			<div class="container">	
 			<div class="header-top-in">			
-				
-				<span class="logo"><a href="index.html"><img src="{% static "images/logo.png" %}" alt="" width="304" height="150" ></a></span>
-				<div class="logo"></div>
+				<div class="logo">
+					<a href="index.php"><img src="/static/images/logo.png" alt=" " width="97%" height="134" ></a>
+				</div>
+                
+                
+
+                
 				<div class="header-in">
 					<ul class="icon1 sub-icon1">
 							<li  ><a href="wishlist.html">WISH LIST (0)</a> </li>
-							<li  ><a href="account.html">MY ACCOUNT</a></li>
+							<li  ><a href="account.html">  MY ACCOUNT</a></li>
 							<li ><a href="#" > SHOPPING CART</a></li>
 							<li > <a href="checkout.html" >CHECKOUT</a> </li>	
 							<li><div class="cart">
@@ -85,16 +82,16 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 							  <div class="cart_box">
 							   	 <div class="message">
 							   	     <div class="alert-close"> </div> 
-					                <div class="list_img"><img src="{% static "images/14.jpg" %}" class="img-responsive" alt=""></div>
+					                <div class="list_img"><img src="/static/images/14.jpg" class="img-responsive" alt=""></div>
 								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
 		                             $12.00</span></div>
 		                              <div class="clearfix"></div>
-	                              </div>
-	                            </div>
+                                </div>
+                            </div>
 	                            <div class="cart_box1">
 								  <div class="message1">
 							   	     <div class="alert-close1"> </div> 
-					                <div class="list_img"><img src="{% static "images/15.jpg" %}" class="img-responsive" alt=""></div>
+					                <div class="list_img"><img src="/static/images/15.jpg" class="img-responsive" alt=""></div>
 								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
 		                             $12.00</span></div>
 		                              <div class="clearfix"></div>
@@ -113,66 +110,64 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 					      <div class="clearfix"></div>
 						</ul>
 							</li>
-						</ul>
-				</div>
+				  </ul> 				</div>
+                  
+                  
+                 <div class="header-can">
+                  <div class="header-can-bottom">
+			  <ul class="social-in">
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i class="facebook"> </i></a></li>
+						<li><a href="#"><i class="twitter"> </i></a></li>					
+						<li><a href="#"><i class="skype"> </i></a></li>
+		    </ul>	
+					<div class="search">
+					  <form>
+							<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+						  <input type="submit" value="">
+					  </form>
+                      </div>
+					</div>
+					<div class="clearfix"> </div>
+		  </div>
+                
 				<div class="clearfix"> </div>
 			</div>
 			</div>
 		</div>
+        
 		<div class="header-bottom">
 		<div class="container">
 			<div class="h_menu4">
 				<a class="toggleMenu" href="#">Menu</a>
 				<ul class="nav">
-					<li class="active"><a href="index.html"><i> </i>HOME</a></li>
-					<li >CATEGORY
-					  <ul class="drop">
-							<li><a href="products.html">Apple</a></li>
-							<li><a href="products.html">SAMSUNG</a></li> 
-						<li><a href="products.html">Sony</a></li>
+					<li ><a href="index.php"><i> </i>HOME</a></li>
+					<li ><a href="#" >CATEGORY</a>
+						<ul class="drop">
+							<li><a href="products.html">APPLE</a></li>
+							<li><a href="products.html">SAMSUNG</a></li>
 							<li><a href="products.html">ANDRIOD</a></li>
+							<li><a href="products.html">Acer</a></li>
 							<li><a href="products.html">HP</a></li>
 							<li><a href="products.html">Intel</a></li>
 						</ul>
-						</li> 						
-						<li><a href="products.html">SHOP BY MODEL</a></li>            
-						<li><a href="products.html">WEEKLY SPECIAL</a></li>						
-				  <li>ABOUT US</li>
-						<li><a href="contact.html">CONTACT US</a></li>
-						<li></li>
+				  </li> 						
+						<li><a href="products.html" >  Shop By Model</a></li>            
+						<li><a href="products.html" > Weekly Special</a></li>						  				 
+						<li><a href="products.html" > Shipping and Returns</a></li>
+						<li><a href="products.html" > About Us </a></li>
+						<li class="active"><a href="contact.html" > Contact Us </a></li>
 					
 				</ul>
-				<script type="text/javascript" src="{% static "js/nav.js" %}"></script>
+			  <script type="text/javascript" src="/static/js/nav.js"></script>
 			</div>
 		</div>
 		</div>
-		<div class="header-top-in">
-			<div class="container">
-			<div class="header-top-on">
-			<p3 class="wel"><a href="products.html">Welcome to proteK Online Store</a>			</p3>
-			<div class="header-can">
-				<ul class="social-in">
-						<li><a href="#"><i> </i></a></li>
-						<li><a href="#"><i class="facebook"> </i></a></li>
-						<li><a href="#"><i class="twitter"> </i></a></li>					
-						<li><a href="#"><i class="skype"> </i></a></li>
-					</ul>	
-					<div class="down-top">		
-							<select class="in-drop">
-							  <option value="Dollars" class="in-of">Dollars</option>
-							  <option value="USD" class="in-of">USD</option>
-							  <option value="CA" class="in-of">CA</option>
-							</select>
-					 </div>
-					<div class="search">
-						<form>
-							<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
-							<input type="submit" value="">
-						</form>
-					</div>
-
-					<div class="clearfix"> </div>
-			</div>
+		<div class="header-bottom-in">
+		<div class="container">
+		<div class="header-bottom-on">
+			<p3 class="wel"><a href="#">Welcome to proteK online Store. Check out our latest products</a>			</p3>
+			
 			<div class="clearfix"></div>
 		</div>
 		</div>
@@ -185,13 +180,13 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 				<!-- Slideshow 4 -->
 			   <div class="slider">
 			<ul class="rslides" id="slider1">
-			  <li><img src="{% static "images/banner.png" %}" alt="">
+			  <li><img src="/static/images/banner.png" alt="">
 			  </li>
-			  <li><img src="{% static "images/banner01.png" %}" alt="">
+			  <li><img src="/static/images/banner1.png" alt="">
 			  </li>
-			  <li><img src="{% static "images/banner00.png" %}" alt="">
+			  <li><img src="/static/images/banner.png" alt="">
 			  </li>
-			  <li><img src="{% static "images/banner03.jpg" %}" alt="">
+			  <li><img src="/static/images/banner3.jpg" alt="">
 			  </li>
 			</ul>
 		</div>
@@ -211,10 +206,6 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 		</div>
 	</div>
 		<!---->
-
-            {% block content %}
-            {% endblock %}
-		
 		<div class="container">
 			<div class="content">
 				<div class="content-top">
@@ -222,7 +213,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 					<div class="content-top-in">
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="single.html"><img  src="{% static "images/pi.jpg" %}" alt="" /></a>	
+								<a href="single.html"><img  src="/static/images/pi.jpg" alt="" /></a>	
 								<div class="top-content">
 									<h5><a href="single.html">Mascot Kitty - White</a></h5>
 									<div class="white">
@@ -236,7 +227,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 						</div>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="single.html"><img  src="{% static "images/pi1.jpg" %}" alt="" />	</a>
+								<a href="single.html"><img  src="/static/images/pi1.jpg" alt="" />	</a>
 								<div class="top-content">
 									<h5><a href="single.html">Bite Me</a></h5>
 									<div class="white">
@@ -249,7 +240,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 						</div>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="single.html"><img  src="{% static "images/pi2.jpg" %}" alt="" /></a>	
+								<a href="single.html"><img  src="/static/images/pi2.jpg" alt="" /></a>	
 								<div class="top-content">
 									<h5><a href="single.html">Little Fella</a></h5>
 									<div class="white">
@@ -262,7 +253,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 						</div>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="single.html"><img  src="{% static "images/pi3.jpg" %}" alt="" /></a>	
+								<a href="single.html"><img  src="/static/images/pi3.jpg" alt="" /></a>	
 								<div class="top-content">
 									<h5><a href="single.html">Astral Cruise</a></h5>
 									<div class="white">
@@ -281,10 +272,10 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 					<h3 class="future">BRANDS</h3>
 					<div class="content-middle-in">
 					<ul id="flexiselDemo1">			
-						<li><img src="{% static "images/ap.png" %}"/></li>
-						<li><img src="{% static "images/ap1.png" %}"/></li>
-						<li><img src="{% static "images/ap2.png" %}"/></li>
-						<li><img src="{% static "images/ap3.png" %}"/></li>
+						<li><img src="/static/images/ap.png"/></li>
+						<li><img src="/static/images/ap1.png"/></li>
+						<li><img src="/static/images/ap2.png"/></li>
+						<li><img src="/static/images/ap3.png"/></li>
 					
 					</ul>
             		<script type="text/javascript">
@@ -314,7 +305,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 		    
 		});
 	</script>
-	<script type="text/javascript" src="{% static "js/jquery.flexisel.js" %}"></script>
+	<script type="text/javascript" src="/static/js/jquery.flexisel.js"></script>
 
 					</div>
 				</div>
@@ -324,7 +315,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 					<div class="content-bottom-in">
 					<ul id="flexiselDemo2">			
 						<li><div class="col-md men">
-								<a href="single.html" class="compare-in "><img  src="{% static "images/pi4.jpg" %}" alt="" />
+								<a href="single.html" class="compare-in "><img  src="/static/images/pi4.jpg" alt="" />
 								<div class="compare in-compare">
 									<span>Add to Compare</span>
 									<span>Add to Whislist</span>
@@ -339,7 +330,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 								</div>							
 							</div></li>
 						<li><div class="col-md men">
-								<a href="single.html" class="compare-in "><img  src="{% static "images/pi5.jpg" %}" alt="" />
+								<a href="single.html" class="compare-in "><img  src="/static/images/pi5.jpg" alt="" />
 								<div class="compare in-compare">
 									<span>Add to Compare</span>
 									<span>Add to Whislist</span>
@@ -354,7 +345,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 								</div>							
 							</div></li>
 						<li><div class="col-md men">
-								<a href="single.html" class="compare-in "><img  src="{% static "images/pi6.jpg" %}" alt="" />
+								<a href="single.html" class="compare-in "><img  src="/static/images/pi6.jpg" alt="" />
 								<div class="compare in-compare">
 									<span>Add to Compare</span>
 									<span>Add to Whislist</span>
@@ -369,7 +360,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 								</div>							
 							</div></li>
 						<li><div class="col-md men">
-								<a href="single.html" class="compare-in "><img  src="{% static "images/pi7.jpg" %}" alt="" />
+								<a href="single.html" class="compare-in "><img  src="/static/images/pi7.jpg" alt="" />
 								<div class="compare in-compare">
 									<span>Add to Compare</span>
 									<span>Add to Whislist</span>
@@ -471,7 +462,7 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 					<div class="clearfix"></div>
 				</div>
 			</div>
-			<p class="footer-class"> <a href="index.html"><img src="{% static "images/home.png" %}" width="16" height="22"></a> Copyright © 2015 Protek.Inc. All Right Reserve </p>
+			<p class="footer-class"> <a href="index.html"><img src="/static/images/home.png" width="16" height="22"></a> Copyright © 2015 Protek.Inc. All Right Reserve </p>
 			<script type="text/javascript">
 						$(document).ready(function() {
 							/*
@@ -490,8 +481,5 @@ Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protecto
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 		</div>
-		
-		  {% block extra_script %}
-        {% endblock %}
 </body>
 </html>

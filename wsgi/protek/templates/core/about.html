@@ -14,35 +14,57 @@
 <meta name="keywords" content="Cell Phones, Apple, Andriod, 
 Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protectors, phone case, tempered glass, bumper case, TPU tough plastic" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-<!-- js -->
-<script src="js/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- js -->
-<!-- start-smoth-scrolling -->
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<style type="text/css">
+.bold {
+	font-weight: bold;
+}
+.Bold {
+	font-weight: bold;
+}
+</style>
+<!--//fonts-->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-	$(".scroll").click(function(event){		
-		event.preventDefault();
-	$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-});
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
 });
 </script>
-<!-- start-smoth-scrolling -->
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>				
 </head>
-	<body>
-		<!-- header -->
-        <div class="header">
+<body>
+  <!--header-->
+	<div class="header">
 		<div class="header-top">
 			<div class="container">	
 			<div class="header-top-in">			
 				<div class="logo">
-					<a href="index.php"><img src="images/logo.png" alt=" " width="97%" height="138" ></a>
+					<a href="index.php"><img src="images/logo.png" alt=" " width="97%" height="134" ></a>
 				</div>
+                
+                
+
+                
 				<div class="header-in">
 					<ul class="icon1 sub-icon1">
 							<li  ><a href="wishlist.html">WISH LIST (0)</a> </li>
@@ -87,12 +109,32 @@ jQuery(document).ready(function($) {
 					      <div class="clearfix"></div>
 						</ul>
 							</li>
-				  </ul>
-				</div>
+				  </ul> 				</div>
+                  
+                  
+                 <div class="header-can">
+                  <div class="header-can-bottom">
+			  <ul class="social-in">
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i class="facebook"> </i></a></li>
+						<li><a href="#"><i class="twitter"> </i></a></li>					
+						<li><a href="#"><i class="skype"> </i></a></li>
+		    </ul>	
+					<div class="search">
+					  <form>
+							<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+						  <input type="submit" value="">
+					  </form>
+                      </div>
+					</div>
+					<div class="clearfix"> </div>
+		  </div>
+                
 				<div class="clearfix"> </div>
 			</div>
 			</div>
 		</div>
+        
 		<div class="header-bottom">
 		<div class="container">
 			<div class="h_menu4">
@@ -109,45 +151,22 @@ jQuery(document).ready(function($) {
 							<li><a href="products.html">Intel</a></li>
 						</ul>
 				  </li> 						
-						  
+						<li><a href="products.html" >  Shop By Model</a></li>            
 						<li><a href="products.html" > Weekly Special</a></li>						  				 
 						<li><a href="products.html" > Shipping and Returns</a></li>
 						<li><a href="products.html" > About Us </a></li>
 						<li class="active"><a href="contact.html" > Contact Us </a></li>
 					
 				</ul>
-				<script type="text/javascript" src="js/nav.js"></script>
+			  <script type="text/javascript" src="js/nav.js"></script>
 			</div>
 		</div>
 		</div>
 		<div class="header-bottom-in">
 		<div class="container">
 		<div class="header-bottom-on">
-			<p3 class="wel"> ABOUT US </p3>
-			<div class="header-can">
-				<ul class="social-in">
-						<li><a href="#"><i> </i></a></li>
-						<li><a href="#"><i class="facebook"> </i></a></li>
-						<li><a href="#"><i class="twitter"> </i></a></li>					
-						<li><a href="#"><i class="skype"> </i></a></li>
-			  </ul>	
-					<div class="down-top">		
-						  <select class="in-drop">
-							  <option value="Dollars" class="in-of">Dollars</option>
-							  <option value="USD" class="in-of"> USD</option>
-							  <option value="CA" class="in-of">CA</option>
-					  </select>
-			  </div>
-					<div class="search">
-						<form>
-							<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-							<input type="submit" value="">
-						</form>
-					</div>
-					<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
+		  <H3 class="wel"><a href="#" class="Bold"> About Us </a></H3>
+		 
 		</div>
 		</div>
 	</div>
@@ -278,36 +297,26 @@ jQuery(document).ready(function($) {
 			<!-- container -->
 				<div class="footer-top">
 						<div class="footer-in">
-							<div class="col-md-3 f-address">
-								<h5>Address</h5>
-								<ul>
-									<li>756 gt globel Place,</li>
-									<li>CD-Road,M 07 435.</li>
-									<li>Telephone: +1 234 567 9871</li>
-									<li>FAX: +1 234 567 9871</li>
-									<li>E-mail : <a href="mailto:example@email.com">Example@mail.com</a></li>
-								</ul>
-							</div>
 						  <div class="col-md-6 f-address f-contact">
-								<h5>Stay in Touch</h5>
+							<h5>Stay in Touch</h5>
 								<form>
 									<input type="text" placeholder="Email address" required>
 									<input type="submit" value="Subscribe">
 								</form>
 							</div>
-							<div class="col-md-3 footer-logo">
 								<a href="index.html">Forward</a>
-								<div class="footer-left">
-									<ul>
-										<li><span class="facebook"> </span></li>
-										<li><a class="twitter" href="#"></a></li>
-										<li><a class="linked-in" href="#"></a></li>
-										<li><a class="you-tube" href="#"></a></li>
-									</ul>
+								<div class="header-can">
+                  <div class="header-can-bottom">
+			  <ul class="social-in">
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i class="facebook"> </i></a></li>
+						<li><a href="#"><i class="twitter"> </i></a></li>					
+						<li><a href="#"><i class="skype"> </i></a></li>
+		    </ul>	
 								</div>
 							</div>
 							<div class="clearfix"> </div>
-						</div>
+				  </div>
 						<div class="footer-middle">
   <div class="container">
 					<div class="footer-middle-in">

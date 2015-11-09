@@ -1,168 +1,228 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>proteK</title>
+<title> proteK </title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Forward Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="Cell Phones, Apple, Andriod, 
+Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protectors, phone case, tempered glass, bumper case, TPU tough plastic" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-<!-- js -->
-<script src="js/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- js -->
-<!-- start-smoth-scrolling -->
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<style type="text/css">
+.bold {
+	font-weight: bold;
+}
+.Bold {
+	font-weight: bold;
+}
+</style>
+<!--//fonts-->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-	$(".scroll").click(function(event){		
-		event.preventDefault();
-	$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-});
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
 });
 </script>
-<!-- start-smoth-scrolling -->
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>				
 </head>
-	<body>
-		<!-- header -->
-		<div class="header">
-			<div class="header-top">
-				<!-- container -->
-				<div class="container">
-					<div class="header-top-left">
-						<ul>
-							<li><a href="#">Career</a></li>      
-							<li><a href="#">Professionals</a></li>       
-							<li><a href="#">News</a></li>     
-							<li><a href="#">Individuals</a><li>
+<body>
+  <!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">	
+			<div class="header-top-in">			
+				<div class="logo">
+					<a href="index.php"><img src="images/logo.png" alt=" " width="97%" height="134" ></a>
+				</div>
+                
+                
+
+                
+				<div class="header-in">
+					<ul class="icon1 sub-icon1">
+							<li  ><a href="wishlist.html">WISH LIST (0)</a> </li>
+							<li  ><a href="account.html">  MY ACCOUNT</a></li>
+							<li ><a href="#" > SHOPPING CART</a></li>
+							<li > <a href="checkout.html" >CHECKOUT</a> </li>	
+							<li><div class="cart">
+									<a href="#" class="cart-in"> </a>
+									<span> 0</span>
+								</div>
+								<ul class="sub-icon1 list">
+						  <h3>Recently added items(2)</h3>
+						  <div class="shopping_cart">
+							  <div class="cart_box">
+							   	 <div class="message">
+							   	     <div class="alert-close"> </div> 
+					                <div class="list_img"><img src="images/14.jpg" class="img-responsive" alt=""></div>
+								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
+		                             $12.00</span></div>
+		                              <div class="clearfix"></div>
+                                </div>
+                            </div>
+	                            <div class="cart_box1">
+								  <div class="message1">
+							   	     <div class="alert-close1"> </div> 
+					                <div class="list_img"><img src="images/15.jpg" class="img-responsive" alt=""></div>
+								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
+		                             $12.00</span></div>
+		                              <div class="clearfix"></div>
+	                              </div>
+	                            </div>
+	                        </div>
+	                        <div class="total">
+	                        	<div class="total_left">CartSubtotal : </div>
+	                        	<div class="total_right">$250.00</div>
+	                        	<div class="clearfix"> </div>
+	                        </div>
+                            <div class="login_buttons">
+							  <div class="check_button"><a href="checkout.html">Check out</a></div>
+							  <div class="clearfix"></div>
+						    </div>
+					      <div class="clearfix"></div>
 						</ul>
-					</div>
-					<div class="header-top-right">
-						<form>
-							<input type="text" placeholder=" " required>
-							<input type="submit" value=" ">
-							<div class="clearfix"> </div>
-						</form>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<!-- //container -->
-			</div>
-			<div class="header-middle">
-				<!-- container -->
-				<div class="container">
-					<div class="header-middle-logo">
-						<a href="index.html">Forward</a>
-					</div>
-					<div class="header-middle-right">
-						<div class="phone">
-							<span> </span>
-							<ul>
-								<li class="gray">Phone</li>
-								<li>+1 234 876 0987 (524 House)</li>
-								<li>+1 234 876 0988 (254 Shop)</li>
-							</ul>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="location">
-							<span> </span>
-							<ul>
-								<li class="gray">Address<li>
-								<li>cape town, georgia,</li>
-								<li>Newyork</li>
-							</ul>
-						</div>
-						<div class="clearfix"> </div>
+							</li>
+				  </ul> 				</div>
+                  
+                  
+                 <div class="header-can">
+                  <div class="header-can-bottom">
+			  <ul class="social-in">
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i class="facebook"> </i></a></li>
+						<li><a href="#"><i class="twitter"> </i></a></li>					
+						<li><a href="#"><i class="skype"> </i></a></li>
+		    </ul>	
+					<div class="search">
+					  <form>
+							<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+						  <input type="submit" value="">
+					  </form>
+                      </div>
 					</div>
 					<div class="clearfix"> </div>
-				</div>
-				<!-- //container -->
+		  </div>
+                
+				<div class="clearfix"> </div>
 			</div>
-			<div class="top-nav">
-				<!-- container -->
-				<div class="container">
-					<span class="menu">MENU</span>
-					<ul class="nav1">
-						<li><a href="about.html">About us</a><li>                        
-						<li><a href="matches.html">Matches</a><li>                 
-						<li><a href="gallery.html">Gallery</a><li>               
-						<li><a href="articles.html">Articles</a><li>                  
-						<li><a class="active" href="blog.html">Blogs</a><li>                   
-						<li><a href="typo.html">Typo</a><li>             
-						<li><a href="contact.html">Contact</a></li>
-						<div class="clearfix"> </div>
-					</ul>
-					<!-- script-for-menu -->
-							 <script> 
-							   $( "span.menu" ).click(function() {
-								 $( "ul.nav1" ).slideToggle( 300, function() {
-								 // Animation complete.
-								  });
-								 });
-							
-							</script>
-						<!-- /script-for-menu -->
-				</div>
-				<!-- //container -->
 			</div>
-			<div class="blue"> </div>
 		</div>
+        
+		<div class="header-bottom">
+		<div class="container">
+			<div class="h_menu4">
+				<a class="toggleMenu" href="#">Menu</a>
+				<ul class="nav">
+					<li ><a href="index.php"><i> </i>HOME</a></li>
+					<li ><a href="#" >CATEGORY</a>
+						<ul class="drop">
+							<li><a href="products.html">APPLE</a></li>
+							<li><a href="products.html">SAMSUNG</a></li>
+							<li><a href="products.html">ANDRIOD</a></li>
+							<li><a href="products.html">Acer</a></li>
+							<li><a href="products.html">HP</a></li>
+							<li><a href="products.html">Intel</a></li>
+						</ul>
+				  </li> 						
+						<li><a href="products.html" >  Shop By Model</a></li>            
+						<li><a href="products.html" > Weekly Special</a></li>						  				 
+						<li><a href="products.html" > Shipping and Returns</a></li>
+						<li><a href="products.html" > About Us </a></li>
+						<li class="active"><a href="contact.html" > Contact Us </a></li>
+					
+				</ul>
+			  <script type="text/javascript" src="js/nav.js"></script>
+			</div>
+		</div>
+		</div>
+		<div class="header-bottom-in">
+		<div class="container">
+		<div class="header-bottom-on">
+		  <H3 class="wel"><a href="#" class="Bold"> Our Blog </a></H3>
+		 
+		</div>
+		</div>
+	</div>
 		<!-- //header -->
 		<!-- blog -->
 		<div class="blog">
 			<!-- container -->
 			<div class="container">
-				<div class="blog-text">
-					<h3>Our Blog</h3>
-				</div>
-				<div class="col-md-8 blog-top-left-grid">
+				<div class="col-md-7 blog-top-left-grid">
 					<div class="left-blog">
 						<div class="blog-left">
-							<div class="blog-left-left">
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								<a href="single.html"><img src="images/8.jpg" alt="" /></a>
-							</div>
+						  <div class="blog-left-left">
+							
+							  <a href="single.html"><img src="images/Another.jpg" alt="" width="366" height="171" /></a>
+                            
 							<div class="blog-left-right">
-								<a href="single.html">Phasellus ultrices tellus eget ipsum ornare molestie </a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin 
-								dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus 
-								fringilla hendrerit lectus nec vehicula. ultrices tellus eget ipsum ornare consectetur adipiscing elit.Sed blandit .
-								estibulum aliquam neque nibh, sed accumsan nulla ornare sit amet. 
-							</p>
+								<a href="single.html">Iphone 6 4.7 Screen Protector </a> <br> 
+                                </br>
+                                
+                                                            <p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a>							</p>
+                                                            <div>
+                                                            </div>
+							</div>
+
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="blog-left">
 							<div class="blog-left-left">
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								<a href="single.html"><img src="images/10.jpg" alt="" /></a>
+					<br> 
+                                </br>
+								<a href="single.html"><img src="images/Inew.jpg" alt="" width="366" height="171" /></a>
 							</div>
 							<div class="blog-left-right">
-								<a href="single.html">Phasellus ultrices tellus eget ipsum ornare molestie</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin 
-								dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus 
-								fringilla hendrerit lectus nec vehicula. ultrices tellus eget ipsum ornare consectetur adipiscing elit.Sed blandit .
-								estibulum aliquam neque nibh, sed accumsan nulla ornare sit amet.
-								</p>
+								<a href="single.html"> Iphone 6 4.7 Screen Protector </a>
+								<br>
+                                </br>
+                                
+                                <p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (0)</a></p>
+                                
+                                <br>
+                                    </br>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="blog-left">
 							<div class="blog-left-left">
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								<a href="single.html"><img src="images/8.jpg" alt="" /></a>
+								
+								<a href="single.html"><img src="images/iphone.jpg" alt="" width="366" height="171" /></a>
 							</div>
 							<div class="blog-left-right">
-								<a href="single.html">Phasellus ultrices tellus eget ipsum ornare molestie</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin 
-								dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus 
-								fringilla hendrerit lectus nec vehicula. ultrices tellus eget ipsum ornare consectetur adipiscing elit.Sed blandit .
-								estibulum aliquam neque nibh, sed accumsan nulla ornare sit amet. 
-								</p>
+								<a href="single.html">Iphone 5C Screen Protector</a>
+                                <br>
+                                </br>
+                                <p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (0)</a></p>
+					
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -187,16 +247,17 @@ jQuery(document).ready(function($) {
 						</ul>
 					</nav>
 				</div>
-				<div class="col-md-4 blog-top-right-grid">
+				<div class="col-md-5 blog-top-right-grid">
 					<div class="Categories">
-						<h3>Categories</h3>
+           
+						<h3> Categories</h3>
 						<ul>
-							<li><a href="#">Phasellus sem leo, interdum quis risus</a></li>
-							<li><a href="#">Nullam egestas nisi id malesuada aliquet </a></li>
-							<li><a href="#"> Donec condimentum purus urna venenatis</a></li>
-							<li><a href="#">Ut congue, nisl id tincidunt lobor mollis</a></li>
-							<li><a href="#">Cum sociis natoque penatibus et magnis</a></li>
-							<li><a href="#">Suspendisse nec magna id ex pretium</a></li>
+							<li><a href="#"> Apple </a></li>
+							<li><a href="#"> Samsung </a></li>
+							<li><a href="#"> Andriod </a></li>
+							<li><a href="#"> Dell </a></li>
+							<li><a href="#"> Acer</a></li>
+							<li><a href="#"> HP </a></li>
 						</ul>
 					</div>
 					<div class="Categories">
@@ -213,39 +274,40 @@ jQuery(document).ready(function($) {
 							<li><a href="#">September 2014 (8)</a></li>
 							<li><a href="#">August 2014 (6)</a></li>                          
 						</ul>
+                       
 					</div>
 					<div class="comments">
 						<h3>Recent Comments</h3>
+                         <br>
+                        </br>
 						<div class="comments-text">
-							<div class="col-md-3 comments-left">
-								<img src="images/user.png" alt="" />
-							</div>
+							<div class="col-md-3 comments-left"><img src="images/Another.jpg" alt="" width="100" height="40" /></div>
 							<div class="col-md-9 comments-right">
 								<h5>Admin</h5>
-								<a href="#">Phasellus sem leointerdum risus</a> 
-								<p>March 16,2014 6:09:pm</p>
+								<a href="#">Iphone 6 4.7 Screen Protector</a> 
+								<p>June 11,2015 2:09:pm</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="comments-text">
 							<div class="col-md-3 comments-left">
-								<img src="images/user.png" alt="" />
+								<img src="images/iphone.jpg" alt="" width="100" height="40" />
 							</div>
 							<div class="col-md-9 comments-right">
 								<h5>Admin</h5>
-								<a href="#">Phasellus sem leointerdum risus</a> 
-								<p>March 16,2014 6:09:pm</p>
+								Iphone 5C Screen Protector
+								<p>April 16,2015 1:09:pm</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="comments-text">
 							<div class="col-md-3 comments-left">
-								<img src="images/user.png" alt="" />
+								<img src="images/Inew.jpg" alt="" width="100" height="40" />
 							</div>
 							<div class="col-md-9 comments-right">
 								<h5>Admin</h5>
-								<a href="#">Phasellus sem leointerdum risus</a> 
-								<p>March 16,2014 6:09:pm</p>
+								<a href="#"> Iphone 6S Screen Protector</a> 
+								<p>March 16,2015 6:09:pm</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -259,66 +321,68 @@ jQuery(document).ready(function($) {
 		<!-- footer -->
 		<div class="footer">
 			<!-- container -->
-			<div class="container">
-				<div class="footer-top">
-						<div class="footer-grids">
-							<div class="col-md-3 f-address">
-								<h5>Address</h5>
-								<ul>
-									<li>756 gt globel Place,</li>
-									<li>CD-Road,M 07 435.</li>
-									<li>Telephone: +1 234 567 9871</li>
-									<li>FAX: +1 234 567 9871</li>
-									<li>E-mail : <a href="mailto:example@email.com">Example@mail.com</a></li>
-								</ul>
-							</div>
-							<div class="col-md-6 f-address f-contact">
-								<h5>Stay in Touch</h5>
-								<form>
-									<input type="text" placeholder="Email address" required>
-									<input type="submit" value="Subscribe">
-								</form>
-							</div>
-							<div class="col-md-3 footer-logo">
-								<a href="index.html">Forward</a>
-								<div class="footer-left">
-									<ul>
-										<li><a class="facebook" href="#"></a></li>
-										<li><a class="twitter" href="#"></a></li>
-										<li><a class="linked-in" href="#"></a></li>
-										<li><a class="you-tube" href="#"></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="footer-bottom">
-							<div class="copyright">
-								<p>© 2015 Forward. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-				</div>
+			<div class="footer-middle">
+  <div class="container">
+	  <div class="footer-middle-in">
+						<h6>About us</h6>
+						<p>ProteK is a 'Top Rated' company develop in the year 2015 that specialize in screen protector and cases for smart devices of all model.</p>
+	  </div>
+					<div class="footer-middle-in">
+						<h6>Information Center</h6>
+						<ul>
+							<li><a href="about.html">About Us </a></li>
+							<li><a href="returnpolicy.html">Shipping & Returns </a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+					  </ul>
+					</div>
+					<div class="footer-middle-in">
+						<h6 class="form-group">Customer Service</h6>
+						<ul>
+						  <li><a href="contact.html">Contact Us</a></li>
+							<li><a href="returnpolicy.html">Returns</a></li>
+							<li><a href="contact.html">Site Map</a></li>
+						</ul>
+					</div>
+					<div class="footer-middle-in">
+						<h6> Account Settings</h6>
+						<ul>
+							<li><a href="account.html">My Account Settings</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="wishlist.html">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
+					<div class="footer-middle-in">
+						<h6>Extras & Affiliates</h6>
+						<ul>
+							<li><a href="products.html">Models</a></li>
+							<li><a href="#">Gift Vouchers</a></li>
+							<li><a href="#">Affiliates</a></li>
+							<li><a href="specials.html">Specials</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+			  </div>
 			</div>
-			<!-- //container -->
+			<p class="footer-class"> <a href="index.html"><img src="images/favicon.PNG" alt="fav" name="fav" height="23" id="fav"></a>Copyright © 2015 proteK Inc. All Rights Reserved <a href="index.html"></a></p>
+<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
 		</div>
-		<!-- //footer -->
-		<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
-								</script>
-									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<!-- content-Get-in-touch -->
-	</body>
+</body>
 </html>

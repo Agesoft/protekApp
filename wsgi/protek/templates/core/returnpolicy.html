@@ -14,40 +14,57 @@
 <meta name="keywords" content="Cell Phones, Apple, Andriod, 
 Smartphone, Nokia, Samsung, LG, SonyErricsson, Motorola, Galaxy, Screen protectors, phone case, tempered glass, bumper case, TPU tough plastic" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <style type="text/css">
 .bold {
 	font-weight: bold;
 }
+.Bold {
+	font-weight: bold;
+}
 </style>
-<!-- js -->
-<script src="js/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- js -->
-<!-- start-smoth-scrolling -->
+<!--//fonts-->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-	$(".scroll").click(function(event){		
-		event.preventDefault();
-	$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-});
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
 });
 </script>
-<!-- start-smoth-scrolling -->
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>				
 </head>
-	<body>
-		<!-- header -->
-        <div class="header">
+<body>
+  <!--header-->
+	<div class="header">
 		<div class="header-top">
 			<div class="container">	
 			<div class="header-top-in">			
 				<div class="logo">
 					<a href="index.php"><img src="images/logo.png" alt=" " width="97%" height="134" ></a>
 				</div>
+                
+                
+
+                
 				<div class="header-in">
 					<ul class="icon1 sub-icon1">
 							<li  ><a href="wishlist.html">WISH LIST (0)</a> </li>
@@ -92,12 +109,32 @@ jQuery(document).ready(function($) {
 					      <div class="clearfix"></div>
 						</ul>
 							</li>
-				  </ul>
-				</div>
+				  </ul> 				</div>
+                  
+                  
+                 <div class="header-can">
+                  <div class="header-can-bottom">
+			  <ul class="social-in">
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i class="facebook"> </i></a></li>
+						<li><a href="#"><i class="twitter"> </i></a></li>					
+						<li><a href="#"><i class="skype"> </i></a></li>
+		    </ul>	
+					<div class="search">
+					  <form>
+							<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+						  <input type="submit" value="">
+					  </form>
+                      </div>
+					</div>
+					<div class="clearfix"> </div>
+		  </div>
+                
 				<div class="clearfix"> </div>
 			</div>
 			</div>
 		</div>
+        
 		<div class="header-bottom">
 		<div class="container">
 			<div class="h_menu4">
@@ -116,12 +153,12 @@ jQuery(document).ready(function($) {
 				  </li> 						
 						<li><a href="products.html" >  Shop By Model</a></li>            
 						<li><a href="products.html" > Weekly Special</a></li>						  				 
-						<li><a href="returnpolicy.html" > Shipping and Returns</a></li>
-						<li><a href="about.html" > About Us </a></li>
+						<li><a href="products.html" > Shipping and Returns</a></li>
+						<li><a href="products.html" > About Us </a></li>
 						<li class="active"><a href="contact.html" > Contact Us </a></li>
 					
 				</ul>
-				<script type="text/javascript" src="js/nav.js"></script>
+			  <script type="text/javascript" src="js/nav.js"></script>
 			</div>
 		</div>
 		</div>
@@ -129,28 +166,10 @@ jQuery(document).ready(function($) {
 		<div class="container">
 		<div class="header-bottom-on">
 			<p3><strong> SHIPPING &amp; RETURN </strong></p3>
-			<div class="header-can">
-				<ul class="social-in">
-						<li><a href="#"><i> </i></a></li>
-						<li><a href="#"><i class="facebook"> </i></a></li>
-						<li><a href="#"><i class="twitter"> </i></a></li>					
-						<li><a href="#"><i class="skype"> </i></a></li>
-			  </ul>	
-					<div class="down-top">		
-						  <select class="in-drop">
-							  <option value="Dollars" class="in-of">Dollars</option>
-							  <option value="USD" class="in-of"> USD</option>
-							  <option value="CA" class="in-of">CA</option>
-					  </select>
-			  </div>
-					<div class="search">
-						<form>
-							<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-							<input type="submit" value="">
-						</form>
-					</div>
+			
+					
+					
 					<div class="clearfix"> </div>
-			</div>
 			<div class="clearfix"></div>
 		</div>
 		</div>
@@ -207,6 +226,7 @@ jQuery(document).ready(function($) {
 							<p> Customers should expect to receive their refund within 21 days after returning their package to the return shipper. However, in many cases you will receive a refund more quickly. This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days) and the time it takes us to process your return once we receive it (3 to 5 business days). </p>
                             
                             <p> If customers need to return an item, please <a href="contact.html">Contact Us</a> with your order number and details about the product you would like to return. We will respond quickly with instructions for how to return items from your order. </p>
+                            
 
 						</div>
 					</div>
