@@ -28,6 +28,6 @@ from protekApp.views import *
 #from . import views
 
 urlpatterns = [
-    url(r'^$', views.home, name="home"),	
-	url(r'^contact/', veiws.contact, name="contact"),
+    url(r'^$', home, name="home"),	
+	url(r'^contact/', home, name="home"),
 ]
