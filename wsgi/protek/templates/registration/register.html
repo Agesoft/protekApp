@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block heading %}Create Account{% endblock %}
+
+{% block content %}
+	
+	<div class="container">
+		<div class="account">
+			<h2 class="account-in">Please Fill All Feilds</h2>
+            <h2> Please Register </h2>
+				<form>
+				<div>
+					<span>First Name*</span>
+					<input type="text">
+				</div> 	
+				<div>			
+					<span class="name-in">Last Name*</span>
+					<input type="text"> 
+				</div>			
+				<div> 	
+					<span class="mail">Email*</span>
+					<input type="text"> 
+				</div>
+				<div> 
+					<span class="word">Password*</span>
+					<input type="password">
+				</div>				
+					<input type="submit" value="Done"> 
+				</form>
+		</div>
+	</div>
+		{% endblock content %}
