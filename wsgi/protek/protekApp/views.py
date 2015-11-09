@@ -7,5 +7,5 @@ def home(request):
 def contact(request):
 	return render(request, 'core/contact.html')
 	
-def account_m(request):
-	return render(request, 'core/account.html')
+def account_new(request):
+	return render(request, 'core/login.html')
