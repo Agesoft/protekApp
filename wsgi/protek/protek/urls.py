@@ -15,6 +15,11 @@ Including another URLconf
 	url(r'^admin/', include(admin.site.urls)),
 	url(r'^user/(\w+)/$', user_page),
   (r'^login/$', 'django.contrib.auth.views.login'),
+	url(r'^contact/', contact, name="contact"),
+	
+	
+def conact(request):
+	return render(request, 'core/contact.html')
 """
 from django.conf.urls import include, url
 from django.contrib import admin
@@ -24,5 +29,4 @@ from protekApp.views import *
 
 urlpatterns = [
     url(r'^$', home, name="home"),
-	url(r'^contact/', contact, name="contact"),
 ]
