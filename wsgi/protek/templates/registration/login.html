@@ -8,7 +8,7 @@
 		<div class="account">
 			<h2 class="account-in">Login</h2>
             <h2>Welcome Back</h2>
-			{% if form.has_errors %}       
+			{% if form.errors %}       
 			<p style="color:red;" >Your username and password didn't match. Please try again.</p>
 			{% endif %}
 				<form method="post" action="{% url 'django.contrib.auth.views.login' %}">
@@ -20,9 +20,10 @@
 				<div> 
 					<span class="word" for="id_password">Password</span>
 					{{ form.password }}
-				</div>
-					<input type="hidden" name="next" value="/" />				
-					<input type="submit" value="Login"> 
+				</div>				
+					<input type="submit" value="Login">
+					<input type="hidden" name="next" value="{{ next }}" /> 
+					
 				</form>
 		</div>
 	</div>
