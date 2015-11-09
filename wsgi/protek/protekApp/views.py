@@ -8,4 +8,4 @@ def contact(request):
 	return render(request, 'core/contact.html')
 	
 def account_new(request):
-	return render(request, 'core/login.html')
+	return render(request, 'core/account.html')
