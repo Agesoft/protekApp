@@ -1,8 +1,5 @@
-from django.http import HttpResponse
-from django.template.loader import get_template
+from django.shortcuts import render
+
 
 def main_page(request):
-    template = get_template('home.html')
-	outp = template.render({'user': 'DOC'})
-    return HttpResponse(outp)			
-			
+    return render(request, 'core/home.html')

@@ -23,5 +23,5 @@ from protekApp.views import *
 #from . import views
 
 urlpatterns = [
-    url(r'^$', main_page),
+    url(r'^$', main_page, name="home"),
 ]
