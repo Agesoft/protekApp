@@ -121,5 +121,3 @@ STATIC_ROOT = os.path.join(WSGI_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'templates/core/static'),
 )
-
-\core
