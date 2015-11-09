@@ -7,11 +7,12 @@
 	<div class="container">
 		<div class="account">
 			<h2 class="account-in">Login</h2>
-            <h2>Greatness Awaits</h2>
+            <h2>Welcome Back</h2>
 			{% if form.has_errors %}       
 			<p style='color:red;' >Your username and password didn't match. Please try again.</p>
 			{% endif %}
-				<form method="post" action=".">			
+				<form method="post" action=".">	
+			{% csrf_token %}
 				<div> 	
 					<span class="mail" for="id_username">Email</span>
 					{{ form.username }} 
