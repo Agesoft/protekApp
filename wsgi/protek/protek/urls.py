@@ -24,4 +24,5 @@ from protekApp.views import *
 
 urlpatterns = [
     url(r'^$', home, name="home"),
+	url(r'^contact/', contact, name="contact"),
 ]
